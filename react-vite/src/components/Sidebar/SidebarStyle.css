@@ -1,0 +1,42 @@
+.sidebar{
+    width: 20%;
+    padding-left: 25px;
+    border-color: rgb(85, 66, 36);
+    border-style: solid;
+    border-width: 2px;
+    
+}
+
+.sidebar-btn-area{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    gap: 25px;
+    width: 75%;
+    padding-bottom: 25px;
+}
+
+.user-name{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 75%;
+    text-align: left;
+
+    padding-bottom: 125px;
+    padding-top: 25px;
+}
+
+.create-notebook-menu{
+    position: absolute;
+    top: 10%;
+    left: 35%;
+    background-color: #FFC7C2;
+    height: 300px;
+    width: 600px;
+    padding: 50px;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 6px;
+    border-color: antiquewhite;
+}

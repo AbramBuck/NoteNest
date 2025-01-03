@@ -1,0 +1,57 @@
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);  
+    display: flex;
+    justify-content: center;
+    align-items: center;     
+    z-index: 1000;           
+  }
+ 
+
+
+  .form-title{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    text-align: left;
+    padding: 15px 0px 0px 0px;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .modal-content {
+    background: antiquewhite;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    max-width: 400px;        
+    width: 100%;
+    border-radius: 5px;            
+  }
+  
+  .modal-buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    width: fit-content;
+    gap: 20px; 
+  }
+ .confirm-del-notebtn,
+ .cancel-de-note-btn {
+    width:30%
+ }
+
+ .del-btn{
+    color: antiquewhite;
+    background-color: rgb(133, 15, 15);
+ }
+
+ .del-btn:hover {
+    color: rgb(137, 6, 6);
+    background-color: rgb(252, 176, 176);
+ }

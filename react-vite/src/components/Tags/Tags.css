@@ -1,0 +1,137 @@
+/* Tags.css */
+
+.Tags-wrapper {
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+    background-color: #d3dca2; 
+  }
+  
+  .sidebar {
+    width: 200px;
+    border-right: 1px solid rgba(255, 255, 255, 0.1);
+    background-color: #6A6F4C; /* Sidebar background */
+  }
+  
+  
+  .tags-container {
+    width: 100%;
+    max-width: 1000px;
+    min-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .tags-container h2 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .tag-create {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    align-items: center;
+  }
+  
+  .tag-create input[type="text"] {
+    flex: 1;
+    padding: 8px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    max-width: 200px;
+    min-width: 200px;
+  }
+  
+  .tag-create select {
+    padding: 8px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+    color: #333;
+  }
+  
+  .btn-primary {
+    display: flex;
+    align-items: center;
+    padding: 8px 12px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #98665f;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .btn-primary .icon-small {
+    margin-right: 5px;
+  }
+  
+  .btn-primary:hover {
+    background-color: #468c60;
+  }
+  
+  .tags-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .tag-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+  }
+  
+  .tag-item span {
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  .btn-icon {
+    background: none;
+    border: none;
+    color: #888;
+    cursor: pointer;
+    transition: color 0.2s;
+  }
+  
+  .btn-icon:hover {
+    color: #a00303;
+  }
+  
+  .btn-secondary {
+    padding: 5px 10px;
+    font-size: 0.9rem;
+    color: #fff;
+    background-color: #b78c64;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .btn-secondary:hover {
+    background-color: #63a867;
+  }
+  
+  .btn-secondary-remove {
+    background-color: #f9a6b5;
+  }
+  
+  .btn-secondary-remove:hover {
+    background-color: #f9a6b5;
+  }

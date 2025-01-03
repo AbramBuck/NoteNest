@@ -1,0 +1,298 @@
+/* Main Layout */
+.side-bar-wrapper {
+  display: flex;
+  width: 100%;
+  min-height: 100vh;
+  background-color: #6A6F4C; /* Organic green #6A6F4C */
+}
+
+/* Sidebar adjustments */
+.sidebar {
+  width: 200px;
+  border-right: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  background-color: #6A6F4C; /* Organic green #6A6F4C */
+}
+
+/* Main container layout */
+.create-task-container {
+  flex: 1;
+  display: flex;
+  background-color: #6A6F4C; /* Organic green #6A6F4C */
+}
+
+/* Left panel styling */
+.left-panel {
+  width: 300px;
+  border-right: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  background-color: #6A6F4C; /* Organic green #6A6F4C */
+}
+
+.task-preview {
+  border: 1px solid #CDB89D; /* Butter */
+  border-radius: 4px;
+  padding: 15px;
+  margin-bottom: 15px;
+  background-color: #422F28; /* Cocoa */
+  color: white;
+}
+
+.task-preview h3 {
+  font-size: 1rem;
+  margin-bottom: 8px;
+  color: #CDB89D; /* Butter */
+}
+
+.task-preview p {
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+/* Right panel styling */
+.right-panel {
+  flex: 1;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #6A6F4C; /* Organic green #6A6F4C */
+}
+
+.right-panel h2 {
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+  color: white;
+  text-align: center;
+  background-color: #5E2611; /* Palm oil */
+  padding: 10px 20px;
+  border-radius: 4px;
+}
+
+.form-container {
+  max-width: 700px;
+  max-height: 800px;
+  width: 100%;
+  padding: 40px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background-color: #dbcdba; /* Light Butter */
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+
+}
+
+
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 500;
+  color: #422F28; /* Cocoa */
+}
+
+input[type="text"],
+textarea {
+  width: 100%;
+  height: 40px;
+  padding: 10px;
+  border: 1px solid #5E2611; /* Palm oil */
+  background-color: white;
+  margin-bottom: 20px;
+  color: #422F28; /* Cocoa */
+  border-radius: 4px;
+  font-size: medium;
+}
+
+textarea {
+  height: 150px;
+}
+
+input[type="text"]:focus,
+textarea:focus {
+  border-color: #5E2611; /* Palm oil */
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(94, 38, 17, 0.2); /* Palm oil with opacity */
+}
+
+/* Priority buttons */
+.priority-btn.low {
+  /* background-color: #6A6F4C; Organic */
+  color: black;
+  
+}
+
+.priority-btn.medium {
+  /* background-color: #5E2611; Palm oil */
+  color: black;
+}
+
+.priority-btn.high {
+  /* background-color: #422F28; Cocoa */
+  color: black;
+}
+
+/* Form action buttons */
+.create_button,
+.cancel_button {
+  padding: 10px 30px;
+  border: none;
+  background-color: #5E2611; /* Palm oil */
+  color: white;
+  cursor: pointer;
+  min-width: 120px;
+  border-radius: 4px;
+  transition: background-color 0.2s;
+}
+
+.create_button:hover,
+.cancel_button:hover {
+  background-color: #422F28; /* Cocoa */
+}
+
+/* Radio button styling */
+input[type="radio"] {
+  appearance: none;
+  width: 16px;
+  height: 16px;
+  border: 2px solid #5E2611; /* Palm oil */
+  border-radius: 50%;
+  margin-right: 8px;
+}
+
+input[type="radio"]:checked {
+  background-color: #5E2611; /* Palm oil */
+  border: 2px solid #5E2611;
+}
+
+
+
+/* Keep existing responsive design */
+/* Responsive design */
+@media (max-width: 768px) {
+  /* Keep main wrapper in row direction */
+  .side-bar-wrapper {
+    flex-direction: row;
+  }
+
+  /* Sidebar styling */
+  .sidebar {
+    width: 200px;
+    min-width: 200px; /* Prevent shrinking */
+    position: fixed;
+    height: 100vh;
+    background-color: #6A6F4C;
+    z-index: 10;
+  }
+
+  /* Main container adjustments */
+  .create-task-container {
+    margin-left: 200px;
+    width: calc(100% - 200px);
+    padding: 20px;
+    min-height: 100vh;
+    background-color: #6A6F4C;
+  }
+
+  /* Task preview adjustments */
+  .left-panel {
+    width: 100%;
+    max-width: 400px;
+    margin-bottom: 20px;
+    padding: 0;
+    border: none;
+  }
+
+  .task-preview {
+    background-color: #422F28;
+    margin-bottom: 10px;
+  }
+
+  /* Right panel (form) adjustments */
+  .right-panel {
+    width: 100%;
+    padding: 0;
+  }
+
+  .right-panel h2 {
+    font-size: 1.2rem;
+    padding: 8px 16px;
+    margin-bottom: 20px;
+    background-color: #422F28;
+    display: inline-block;
+  }
+
+  /* Form adjustments */
+  form {
+    width: 100%;
+    max-width: none;
+    padding: 20px;
+    background-color: #CDB89D;
+    margin: 0;
+    border-radius: 4px;
+  }
+
+  /* Input field adjustments */
+  input[type="text"],
+  textarea {
+    width: 100%;
+    background-color: white;
+    border: 1px solid #422F28;
+  }
+
+  /* Priority options adjustments */
+  .priority-options {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .priority-label {
+    display: flex;
+    align-items: center;
+  }
+
+  input[type="radio"] {
+    margin-right: 10px;
+  }
+
+  /* Action buttons adjustments */
+  .form-action {
+    margin-top: 20px;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .create_button,
+  .cancel_button {
+    width: 100%;
+    background-color: #422F28;
+    padding: 12px;
+    text-align: center;
+  }
+}
+
+/* Additional breakpoint for very small screens */
+@media (max-width: 480px) {
+  .sidebar {
+    width: 150px;
+  }
+
+  .create-task-container {
+    margin-left: 150px;
+    width: calc(100% - 150px);
+    padding: 10px;
+  }
+
+  form {
+    padding: 15px;
+  }
+
+  .right-panel h2 {
+    font-size: 1.1rem;
+    padding: 6px 12px;
+  }
+}
