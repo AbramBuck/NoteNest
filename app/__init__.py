@@ -37,10 +37,7 @@ app.register_blueprint(auth_routes, url_prefix='/api/auth')
 app.register_blueprint(notebook_routes, url_prefix='/api/notebooks')
 app.register_blueprint(note_routes, url_prefix='/api/notes')
 app.register_blueprint(task_routes, url_prefix='/api/tasks')
-
 app.register_blueprint(tag_routes,url_prefix='/api/tags')
- 
-
 db.init_app(app)
 Migrate(app, db)
 
