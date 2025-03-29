@@ -24,7 +24,7 @@ const sortedNotes = notes
 .slice(0, 4);
 
   return (
-    <div className="page-wrapper">
+    <div className="homepage-page-wrapper">
       <Sidebar />
       {/* NavBar End */}
       <div className="content-wrapper">

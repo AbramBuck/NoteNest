@@ -1,11 +1,10 @@
-.page-wrapper{
+.homepage-page-wrapper{
     display: flex;
     flex-direction: row;
     align-self: center;
     margin-left: auto;
     margin-right: auto;
     width: 100%;
-    max-width: 1200px;
     height: 100%;
     min-height: 1200px;
     background-color: rgb(242, 255, 208);
